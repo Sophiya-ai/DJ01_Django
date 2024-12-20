@@ -23,6 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8#jia&u&x8ej3sg9+vi#up3pn=5fp#kiefe^o0txptw95eff9%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#True - все ошибки будут показываться на странице.
+# False  их не отображает, ставят его когда уже на сервере проект размещают
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'FirstApp',
 ]
 
 MIDDLEWARE = [
