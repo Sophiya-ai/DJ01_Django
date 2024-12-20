@@ -23,6 +23,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('FirstApp.urls')), #если вызываем главную страницу, то пусто в кавычках
-    path('data/', include('HomeworkApp.urls')),
-    path('test/', include('HomeworkApp.urls')),
+    path('HomeworkApp/', include('HomeworkApp.urls')),
 ]
